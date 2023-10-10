@@ -1,0 +1,79 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    /* <uses flex to maintain vertical and horizontal centering of panel container> */
+    display: flex;
+    /* <center horizontally> */
+    align-items: center;
+    /* <center vertically> */
+    justify-content: center;
+    /* <must specify height for vertical centering to work> */
+    height: 100vh;
+}
+#panel{
+    /* <fix dimensions of panel> */
+    width: 700px;
+    height: 600px;
+    background-color: rgb(227, 252, 246);
+    /* <add drop shadow> */
+    filter: drop-shadow(5px 5px 10px gray);
+}
+#days-container{
+    /* <use flex to arrange days as a row> */
+    display: flex;
+}
+.day{
+    /* <constrain dimensions of each day to match overall width and height> */
+    width: 100px;
+    height: 100px;
+}
+.button:hover{
+    /* <changes day color on rollover> */
+    background-color: rgb(122, 245, 177);
+}
+.button:active{
+    /* <changes day color on selection> */
+    background-color: rgb(233, 225, 110);
+}
+h4{
+    /* <style all h4 text elements> */
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkcyan;
+    /* <center text horizontally> */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+#city-text{
+    /* <match the line height to font size for better control of positioning> */
+    font-size: 40px;
+    line-height: 40px;
+    /* <position the city text using specific offset values> */
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.531);
+}
+#hero-container{
+    /* <the parent of an absolutely positioned element must be relative> */
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+#hero-image{
+    /* <prevent the inag from distorting when scaling> */
+    object-fit:cover;
+    width:700px;
+    height: 500px;
+}
+.weather-icon{
+    width: 40px;
+    height: 40px;
+    /* <these 3 lines of code centre the icon horizontally- alternative technique to flex> */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

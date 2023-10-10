@@ -64,7 +64,7 @@ h4{
     height: 500px;
 }
 #hero-image{
-    /* <prevent the inag from distorting when scaling> */
+    /* <prevent the image from distorting when scaling> */
     object-fit:cover;
     width:700px;
     height: 500px;
